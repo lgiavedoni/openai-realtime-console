@@ -9,7 +9,8 @@ export default {
   plugins: [react()],
   resolve: {
     alias: {
-      '/': resolve(dirname(path), 'client')
+      '@': resolve(dirname(path), 'client'),
+      '@routes': resolve(dirname(path), 'client/routes.js')
     }
   }
 };

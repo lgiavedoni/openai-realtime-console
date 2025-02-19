@@ -7,4 +7,9 @@ const path = fileURLToPath(import.meta.url);
 export default {
   root: join(dirname(path), "client"),
   plugins: [react()],
+  resolve: {
+    alias: {
+      '/': resolve(dirname(path), 'client')
+    }
+  }
 };
